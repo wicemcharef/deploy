@@ -13,7 +13,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   node-express:
-    image: wicemcharef/node:18
+    image: wicemcharef/ node:18-buster
     container_name: node-express
     working_dir: /usr/src/app
     volumes:
@@ -28,7 +28,7 @@ services:
       - postgres
 
   nextjs:
-    image: wicemcharef/node:18
+    image: wicemcharef/node:18-buster
     container_name: nextjs
     working_dir: /usr/src/app
     volumes:
