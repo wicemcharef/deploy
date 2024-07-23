@@ -13,7 +13,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   node-express:
-    image: wicemcharef/ node:18-buster
+    image: wicemcharef/node:18-buster
     container_name: node-express
     working_dir: /usr/src/app
     volumes:
@@ -41,3 +41,4 @@ services:
 
 volumes:
   postgres-data:
+
